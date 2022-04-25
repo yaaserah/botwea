@@ -136,9 +136,9 @@ async function startchika() {
                 }
 
                 if (anu.action == 'add') {
-                    chika.sendMessage(anu.id, { image: { url: ppuser }, contextInfo: { mentionedJid: [num] }, caption: `Welcome To ${metadata.subject} @user \n\n*Silahkan Baca Deskripsi Sebelum Bertindak 🌱*` })
+                    chika.sendMessage(anu.id, { image: { url: ppuser }, contextInfo: { mentionedJid: [num] }, caption: `Welcome To ${metadata.subject} @${num.split("@")[0]} \n\n*Silahkan Baca Deskripsi Sebelum Bertindak 🌱 😎*` })
                 } else if (anu.action == 'remove') {
-                    chika.sendMessage(anu.id, { image: { url: ppuser }, contextInfo: { mentionedJid: [num] }, caption: `@${num.split("@")[0]} TELAH KELUAR DARI ${metadata.subject}`})
+                    chika.sendMessage(anu.id, { image: { url: ppuser }, contextInfo: { mentionedJid: [num] }, caption: `ANAK KONTOL KELUAR YAITU @${num.split("@")[0]} KELUAR DARI ${metadata.subject}`})
                 }
             }
         } catch (err) {
